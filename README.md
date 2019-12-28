@@ -1,4 +1,4 @@
-# awewinds <img alt="awewinds version" src="https://img.shields.io/npm/v/awewinds.svg?style=flat-square&label=Version&labelColor=000000&color=222f3e">
+# awewinds <img alt="awewinds version" src="https://img.shields.io/npm/v/awewinds.svg?style=flat-square&label=Version&labelColor=000000&color=3c6382">
 
 ## Tailwind CSS Easy Setup
 
