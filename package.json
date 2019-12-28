@@ -1,0 +1,24 @@
+{
+  "name": "awewinds",
+  "version": "0.0.1",
+  "description": "Tailwind CSS Easy Setup",
+  "main": "index.js",
+  "keywords": [
+    "tailwind",
+    "css",
+    "react",
+    "vue",
+    "setup",
+    "easy"
+  ],
+  "author": "Leandro Favre",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "edit-package-json": "^0.1.14",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.1"
+  },
+  "devDependencies": {},
+  "bin": "./index.js"
+}
