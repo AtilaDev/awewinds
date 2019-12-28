@@ -32,7 +32,11 @@ const queryParams = () => {
 };
 
 function reactJS() {
-  console.log(chalk.cyanBright('Installing Tailwind CSS in ReactJS...'));
+  console.log(
+    chalk.cyanBright(
+      'Installing Tailwind CSS in ReactJS. This action may take a moment, please wait...'
+    )
+  );
 
   let postcssConfig = `const tailwindcss = require('tailwindcss');\nmodule.exports = {\n\tplugins: [\n\t\ttailwindcss('./tailwind.js'), require('autoprefixer')\n\t]\n};`;
 
@@ -78,7 +82,11 @@ function reactJS() {
 }
 
 function vueJS() {
-  console.log(chalk.greenBright('Installing Tailwind CSS in VueJS...'));
+  console.log(
+    chalk.greenBright(
+      'Installing Tailwind CSS in VueJS. This action may take a moment, please wait...'
+    )
+  );
 
   let postcssConfig = `const tailwindcss = require('tailwindcss');\nmodule.exports = {\n\tplugins: [\n\t\ttailwindcss('./tailwind.js'), require('autoprefixer')\n\t]\n};`;
 
