@@ -1,6 +1,6 @@
 {
   "name": "awewinds",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Tailwind CSS Easy Setup",
   "repository": {
     "type": "git",
@@ -18,13 +18,9 @@
     "vue-cli"
   ],
   "author": "Leandro Favre, <atiladevelop@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/AtilaDev/awewinds/issues"
-  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
-    "edit-package-json": "^0.1.14",
     "figlet": "^1.2.4",
     "inquirer": "^7.0.1"
   },
