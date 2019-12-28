@@ -72,12 +72,55 @@ function reactJS() {
       }
       console.log(`stdout: ${stdout}`);
       console.log(chalk.cyanBright('Tailwind CSS installed in your project!'));
+      console.log(chalk.cyanBright('Thanks for using awewinds!'));
     }
   );
 }
 
 function vueJS() {
-  console.log(chalk.greenBright('Coming soon... ;)'));
+  console.log(chalk.greenBright('Installing Tailwind CSS in VueJS...'));
+
+  let postcssConfig = `const tailwindcss = require('tailwindcss');\nmodule.exports = {\n\tplugins: [\n\t\ttailwindcss('./tailwind.js'), require('autoprefixer')\n\t]\n};`;
+
+  fs.writeFile('./postcss.config.js', postcssConfig, function(err) {
+    if (err) {
+      return console.log(err);
+    }
+  });
+
+  fs.mkdir('./src/css', function(err) {
+    if (err) {
+      return console.log(err);
+    }
+
+    let indexCSS = `@tailwind base;\n\n@tailwind components;\n\n@tailwind utilities;`;
+
+    fs.writeFile('./src/css/index.css', indexCSS, function(err) {
+      if (err) {
+        return console.log(err);
+      }
+    });
+
+    fs.writeFile('./src/css/tailwind.css', '', function(err) {
+      if (err) {
+        return console.log(err);
+      }
+    });
+  });
+
+  // Libraries install
+  exec(
+    'npm install tailwindcss --dev && npm install postcss-cli autoprefixer --save-dev && npx tailwind init tailwind.js --full',
+    (err, stdout, stderr) => {
+      if (err) {
+        console.error(`exec error: ${err}`);
+        return;
+      }
+      console.log(`stdout: ${stdout}`);
+      console.log(chalk.greenBright('Tailwind CSS installed in your project!'));
+      console.log(chalk.greenBright('Thanks for using awewinds!'));
+    }
+  );
 }
 
 // IIFE (Immediately Invoked Function Expression)

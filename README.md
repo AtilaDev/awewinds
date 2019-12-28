@@ -12,6 +12,8 @@ $ npx awewinds
 
 ## Instructions
 
+### CRA
+
 ##### Open your package.json file, modify and add the next lines to "scripts" section:
 
 ```
@@ -20,6 +22,21 @@ $ npx awewinds
 ```
 
 ##### Import your CSS in the index.js file
+
+```
+import './css/tailwind.css';
+```
+
+### VUE-CLI
+
+##### Open your package.json file, modify and add the next lines to "scripts" section:
+
+```
+"build:css":"tailwind build src/css/index.css -o src/css/tailwind.css",
+"serve": "npm run build:css && vue-cli-service serve",
+```
+
+##### Import your CSS in the main.js file
 
 ```
 import './css/tailwind.css';
