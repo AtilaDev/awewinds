@@ -44,4 +44,4 @@ import './css/tailwind.css';
 
 ##### And that's all!
 
-##### Please, if my tool help you, consider give a star! Thanks!
+##### Please, if my tool help you, consider give me a star! Thanks!
