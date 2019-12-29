@@ -23,8 +23,8 @@ const queryParams = () => {
     {
       name: 'type',
       type: 'list',
-      message: 'React or Vue project: ',
-      choices: ['React', 'Vue', 'ExpoWeb']
+      message: 'React, Vue or Expo Web project: ',
+      choices: ['React', 'Vue', 'Expo']
     }
   ];
 

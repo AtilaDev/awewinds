@@ -2,7 +2,7 @@
 
 ## Tailwind CSS Easy Setup
 
-### Configure your create-react-app or vue-cli project with Tailwind CSS quickly!
+### Configure your create-react-app, vue-cli or Expo Web project with Tailwind CSS quickly!
 
 ##### On your root project run:
 
@@ -43,6 +43,7 @@ import './css/tailwind.css';
 ```
 
 ### EXPO WEB
+##### IMPORTANT! This only works with Expo Web.
 
 ##### Open your package.json file, modify and add the next lines to "scripts" section:
 
@@ -55,6 +56,11 @@ import './css/tailwind.css';
 
 ```
 import './css/tailwind.css';
+```
+
+##### Run Expo
+```
+$ yarn web
 ```
 
 ##### And that's all!
