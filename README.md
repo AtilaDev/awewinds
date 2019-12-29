@@ -42,6 +42,21 @@ import './css/tailwind.css';
 import './css/tailwind.css';
 ```
 
+### EXPO WEB
+
+##### Open your package.json file, modify and add the next lines to "scripts" section:
+
+```
+"build:css": "tailwind build css/index.css -o css/tailwind.css",
+"web": "npm run build:css && expo start --web",
+```
+
+##### Import your CSS in the App.js file
+
+```
+import './css/tailwind.css';
+```
+
 ##### And that's all!
 
 ##### Please, if my tool help you, consider give me a star! Thanks!
