@@ -12,26 +12,26 @@ $ npx awewinds
 
 ## Instructions
 
-### CRA
+## CRA
 
 ##### Open your package.json file, modify and add the next lines to "scripts" section:
 
-```
+```shell
 "build:css":"tailwind build src/css/index.css -o src/css/tailwind.css",
 "start": "npm run build:css && react-scripts start",
 ```
 
 ##### Import your CSS in the index.js file
 
-```
+```shell
 import './css/tailwind.css';
 ```
 
-### VUE-CLI
+## VUE-CLI
 
 ##### Open your package.json file, modify and add the next lines to "scripts" section:
 
-```
+```shell
 "build:css":"tailwind build src/css/index.css -o src/css/tailwind.css",
 "serve": "npm run build:css && vue-cli-service serve",
 ```
@@ -42,33 +42,39 @@ import './css/tailwind.css';
 import './css/tailwind.css';
 ```
 
-### EXPO WEB
-##### IMPORTANT! This only works with Expo Web and is experimental.
+## Expo
 
-##### Open your package.json file, modify and add the next lines to "scripts" section:
+### IMPORTANT! This is experimental.
 
-```
-"build:css": "tailwind build css/index.css -o css/tailwind.css",
-"web": "npm run build:css && expo start --web",
-```
+The fantastic [Tailwind CSS](https://github.com/tailwindcss/tailwindcss), for React Native!  
+Credit to [Taylor Bryant](https://github.com/taylorbryant/crna-tailwind) for originally translating the classes over to RN.
 
-##### Import your CSS in the App.js file
+Credit to [Jake Broughton](https://github.com/MythicalFish/react-native-tailwind) for React Native Tailwind
 
-```
-import './css/tailwind.css';
-```
+##### Import the components
 
-##### Run Expo
-```
-$ yarn web
+```shell
+import { View, Text } from 'react-native-tailwind';
 ```
 
-##### In your components use className instead style
+##### Use utility classes
 
+```shell
+const HelloWorld = ({ hello }) => (
+  <View className="flex-1 items-center justify-center bg-grey-darkest">
+    <Text className="text-white p-4">{hello}</Text>
+  </View>
+)
 ```
-<Text className="font-bold text-2xl">awewinds!</Text>
-```
 
-##### And that's all!
+To see which classes are supported, see [tailwind.js](https://github.com/MythicalFish/react-native-tailwind/blob/master/src/lib/tailwind.js).
 
-##### Please, if my tool help you, consider give me a star! Thanks!
+And that's all!
+
+Please, if my tool help you, consider give me a star! Thanks!
+
+---
+
+## License
+
+[MIT](https://github.com/AtilaDev/awewinds/blob/master/LICENSE)
