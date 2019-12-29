@@ -2,7 +2,7 @@
 
 ## Tailwind CSS Easy Setup
 
-### Configure your create-react-app, vue-cli or Expo Web project with Tailwind CSS quickly!
+### Configure your create-react-app, vue-cli or Expo (Web & Mobile) project with Tailwind CSS quickly!
 
 ##### On your root project run:
 
