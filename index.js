@@ -195,7 +195,7 @@ function expoWeb() {
       vueJS();
       break;
 
-    case 'ExpoWeb':
+    case 'Expo':
       expoWeb();
       break;
   }
