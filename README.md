@@ -43,7 +43,7 @@ import './css/tailwind.css';
 ```
 
 ### EXPO WEB
-##### IMPORTANT! This only works with Expo Web.
+##### IMPORTANT! This only works with Expo Web and is experimental.
 
 ##### Open your package.json file, modify and add the next lines to "scripts" section:
 
@@ -61,6 +61,12 @@ import './css/tailwind.css';
 ##### Run Expo
 ```
 $ yarn web
+```
+
+##### In your components use className instead style
+
+```
+<Text className="font-bold text-2xl">awewinds!</Text>
 ```
 
 ##### And that's all!
