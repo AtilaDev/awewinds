@@ -1,6 +1,6 @@
 {
   "name": "awewinds",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Tailwind CSS Easy Setup",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
     "cra",
     "vue-cli",
     "expo",
-    "native"
+    "native",
+    "gatsby"
   ],
   "author": "Leandro Favre, <atiladevelop@gmail.com>",
   "license": "MIT",

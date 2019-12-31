@@ -23,7 +23,8 @@ const queryParams = () => {
     {
       name: 'type',
       type: 'list',
-      message: 'React, Vue or Expo (Expo is experimental, by now) project: ',
+      message:
+        'React (works with Gatsby too! Instructions in README), Vue or Expo (Expo is experimental, by now) project: ',
       choices: ['React', 'Vue', 'Expo']
     }
   ];
@@ -153,8 +154,11 @@ function expo() {
 // IIFE (Immediately Invoked Function Expression)
 (async () => {
   msn('awewinds');
-  let { type } = await queryParams();
+  console.log(
+    '\nTailwind CSS easy install on CRA, Gatsby, Vue-cli and Expo (web & mobile)!\n'
+  );
 
+  let { type } = await queryParams();
   switch (type) {
     case 'React':
       reactJS();
