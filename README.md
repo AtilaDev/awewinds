@@ -36,7 +36,7 @@ import './css/tailwind.css';
 "start": "npm run build:css && npm run develop",
 ```
 
-##### Import your CSS in the index.js file
+##### Import your CSS in the ./pages/index.js file
 
 ```shell
 import '../css/tailwind.css';
