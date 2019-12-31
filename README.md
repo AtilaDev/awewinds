@@ -7,7 +7,7 @@
 ##### On your root project run:
 
 ```
-$ npx awewinds
+$ npx awewinds or npm install -g awewinds
 ```
 
 ## Instructions
@@ -40,6 +40,12 @@ import './css/tailwind.css';
 
 ```shell
 import '../css/tailwind.css';
+```
+
+##### Run your project
+
+```shell
+npm start
 ```
 
 ## VUE-CLI
