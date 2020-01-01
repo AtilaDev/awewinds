@@ -24,7 +24,7 @@ const queryParams = () => {
       name: 'type',
       type: 'list',
       message:
-        'React (works with Gatsby too! Instructions in README), Vue or Expo (Expo is experimental, by now) project: ',
+        'React (works with Gatsby too! Instructions in README),\nVue or Expo (Expo is experimental, by now) project: ',
       choices: ['React', 'Vue', 'Expo']
     }
   ];
@@ -32,6 +32,7 @@ const queryParams = () => {
   return inquirer.prompt(qs);
 };
 
+// ReactJS
 function reactJS() {
   console.log(
     chalk.cyanBright(
@@ -82,6 +83,7 @@ function reactJS() {
   );
 }
 
+// VueJS
 function vueJS() {
   console.log(
     chalk.greenBright(
@@ -155,7 +157,7 @@ function expo() {
 (async () => {
   msn('awewinds');
   console.log(
-    '\nTailwind CSS easy install on CRA, Gatsby, Vue-cli and Expo (web & mobile)!\n'
+    '\nTailwind CSS easy install on CRA, Gatsby, Vue-cli and Expo (web & mobile)!\nPlease read instructions:\nhttps://github.com/AtilaDev/awewinds/blob/master/README.md'
   );
 
   let { type } = await queryParams();
