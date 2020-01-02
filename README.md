@@ -2,7 +2,7 @@
 
 ## Tailwind CSS Easy Setup
 
-### Configure your create-react-app, gatsby, create-next-app, vue-cli or Expo (Web & Mobile) project with Tailwind CSS quickly!
+### Configure your create-react-app, gatsby, vue-cli or Expo (Web & Mobile) project with Tailwind CSS quickly!
 
 ##### On your root project run:
 
@@ -48,7 +48,7 @@ import '../css/tailwind.css';
 npm start
 ```
 
-## VUE-CLI
+## Vue cli
 
 ##### Open your package.json file, modify and add the next lines to "scripts" section:
 
