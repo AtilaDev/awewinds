@@ -92,8 +92,6 @@ To see which classes are supported, see [tailwind.js](https://github.com/Mythica
 
 And that's all!
 
-Please, if my tool help you, consider give me a star! Thanks!
-
 ---
 
 ## License
