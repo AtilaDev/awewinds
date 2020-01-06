@@ -4,6 +4,12 @@
 
 ### Configure your create-react-app, gatsby, vue-cli or Expo (Web & Mobile) project with Tailwind CSS quickly!
 
+NOTE: awewinds is only a quick installer for tailwind in your projects. The truly magic does it:
+
+- Credit to Adam Wathan, creator of [Tailwind CSS](https://tailwindcss.com/).
+- Credit to [Taylor Bryant](https://github.com/taylorbryant/crna-tailwind) for originally translating the classes over to RN.
+- Credit to [Jake Broughton](https://github.com/MythicalFish/react-native-tailwind) for React Native Tailwind.
+
 ##### On your root project run:
 
 ```
@@ -66,11 +72,6 @@ import './css/tailwind.css';
 ## Expo
 
 ### IMPORTANT! This is experimental.
-
-The fantastic [Tailwind CSS](https://github.com/tailwindcss/tailwindcss), for React Native!  
-Credit to [Taylor Bryant](https://github.com/taylorbryant/crna-tailwind) for originally translating the classes over to RN.
-
-Credit to [Jake Broughton](https://github.com/MythicalFish/react-native-tailwind) for React Native Tailwind
 
 ##### Import the components
 
